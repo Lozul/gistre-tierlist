@@ -20,4 +20,4 @@ _Réalisation des images et """code""" du site_
 
 ## Nouvelle promo ?
 
-Contactez moi ou faites un fork ajouter/retirer des cours.
+Contactez moi ou faites un fork pour ajouter/retirer des cours.
