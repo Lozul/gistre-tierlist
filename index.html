@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tierlist des cours GISTRE</title>
+<style>
+@font-face {
+    font-family: Quicksand;
+    src: url(fonts/Quicksand-Medium.ttf);
+}
+
+body {
+    font-family: Quicksand;
+    width: 50%;
+    padding: 1em;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tierlist {
+    margin-bottom: 1em;
+}
+
+.tier {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.list span {
+    padding: 10px;
+    background-color: red;
+}
+</style>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev, el) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                el.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Tierlist des cours de GISTRE</h1>
+
+        <div class="tierlist">
+            <div class="list">
+                <span style="background-color: #ff7f7f">S</span>
+                <div id="tierS" class="tier" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="list">
+                <span style="background-color: #ffbf7f">A</span>
+                <div id="tierS" class="tier" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="list">
+                <span style="background-color: #ffdf7f">B</span>
+                <div id="tierS" class="tier" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="list">
+                <span style="background-color: #ffff7f">C</span>
+                <div id="tierS" class="tier" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="list">
+                <span style="background-color: #bfff7f">D</span>
+                <div id="tierS" class="tier" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+
+        <div id="reserv" class="tier" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <img id="drag1" src="images/ams.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag2" src="images/ansy.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag3" src="images/apas.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag4" src="images/arinc.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag5" src="images/arm.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag6" src="images/asta.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag7" src="images/auto.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag8" src="images/bcan.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag9" src="images/buwi.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag10" src="images/coinm.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag11" src="images/conf.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag12" src="images/dbre.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag13" src="images/distro.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag14" src="images/do.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag15" src="images/dril.jpg" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag16" src="images/elec.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag17" src="images/gpgpu.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag18" src="images/hpca.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag19" src="images/iot.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag20" src="images/iotg.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag21" src="images/K.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag22" src="images/kpus.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag23" src="images/lasy.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag24" src="images/mauto.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag25" src="images/mpro.jpg" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag26" src="images/pfe.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag27" src="images/pifi.jpg" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag28" src="images/robo.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag29" src="images/sydi.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag30" src="images/tele.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag31" src="images/test.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag32" src="images/vhdl.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag33" src="images/virli.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag34" src="images/virt.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag35" src="images/voir.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+            <img id="drag36" src="images/win32.png" draggable="true" ondrop="return false" ondragstart="drag(event)" width="100" height="100" />
+        </div>
+    </body>
+</html>
